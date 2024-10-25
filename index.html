@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate</title>
+    <link rel="icon" type="icon" href="image/calculator.png">
+    <link rel="stylesheet" href="calculate.css">
+    <script src="https://kit.fontawesome.com/771729e978.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="card">
+        <div class="header">
+            <p class="calcute">Calculate</p>
+            <div class="icons-cover">
+                <span class="minimize">-</span>
+                <span class="maximize"><i class="fa-regular fa-square"></i></span>
+                <span class="xmark"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+        <div class="input-calculate">
+            <input type="text" class="input-Value">
+        </div>
+        <div class="number-calculate">
+             <div class="row">
+                <span class="btn" onclick="DeleteAll()">AC</span>
+                <span class="btn" onclick="DeleteOneByOne()">DE</span>
+                <span class="btn" onclick="addToInputBox('.')">.</span>
+                <span class="btn" onclick="addToInputBox('/')">/</span>
+             </div>
+             <div class="row">
+                <span class="btn" onclick="addToInputBox('7')">7</span>
+                <span class="btn" onclick="addToInputBox('8')">8</span>
+                <span class="btn" onclick="addToInputBox('9')">9</span>
+                <span class="btn" onclick="addToInputBox('*')">*</span>
+             </div>
+             <div class="row">
+                <span class="btn" onclick="addToInputBox('4')">4</span>
+                <span class="btn" onclick="addToInputBox('5')">5</span>
+                <span class="btn" onclick="addToInputBox('6')">6</span>
+                <span class="btn" onclick="addToInputBox('-')">-</span>
+             </div>
+             <div class="row">
+                <span class="btn" onclick="addToInputBox('1')">1</span>
+                <span class="btn" onclick="addToInputBox('2')">2</span>
+                <span class="btn" onclick="addToInputBox('3')">3</span>
+                <span class="btn" onclick="addToInputBox('+')">+</span>
+             </div>
+             <div class="row">
+                <span class="btn" onclick="addToInputBox('00')">00</span>
+                <span class="btn" onclick="addToInputBox('0')">0</span>
+                <span class="btn equl" onclick="calculate()">=</span>
+             </div>
+        </div>
+    </div>
+
+<script src="calculate.js"></script>
+</body>
+</html>
